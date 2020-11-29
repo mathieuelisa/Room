@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    font-family: 'Questrial', sans-serif;
+}
+/* HEADER */
+
+.logo{
+    height: 20px;
+    margin: 15px 0 0px 35px;
+}
+
+#navbar ul{
+    display: flex;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.navbar-items{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 1.5em;
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+/* FIRST CONTAINER */
+
+.first-container{
+    width: 100%;
+    height: 490px;
+    display: flex;
+}
+
+.firstBloc{
+    margin: 0 auto;
+    width: 60%;
+    height: 490px;
+    font-size: 10px;
+    flex-grow: 1;
+    background-image: url("/images/desktop-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+
+.secondBloc{
+    width: 50%;
+    height: 490px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: whitesmoke
+}
+
+.text-secondBloc{
+    margin-top: 30px;
+    color: lightgrey;
+    line-height: 20px;
+}
+
+.title-secondBloc{
+    font-size: 40px;
+}
+
+.borderLine{
+    border-bottom: 2px solid white;
+}
+
+#shopnow{
+    text-decoration: none;
+    color:black;
+    letter-spacing: 3px;
+}
+
+.shop{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#shopnow:hover{
+    color: grey;
+}
+
+/* SECOND CONTAINER */
+
+.second-container{
+    display: flex;
+    width: 100%;
+    height: 230px;
+}
+
+.carre1{
+    background-image: url("/images/image-about-dark.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 230px;
+}
+
+.carre2{
+    background-color: whitesmoke;
+    width: 50%;
+    height: 230px;
+    padding: 60px 40px;
+}
+
+.carre3{
+    background-image: url("/images/image-about-light.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;;
+    width: 30%;
+    height: 230px;
+}
+
+.title-carre2{
+    font-size: 14px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.text-carre2{
+    font-size: 12px;
+    color: lightgray;
+    line-height: 20px;
+}
+
+/* ARROW */
+
+#placement{
+    display: flex;
+}
+
+#arrowDiv{
+    padding-top: 20px;
+    width: 100px;
+}
+
+.arrow2{
+    margin-left: 15px;
+    animation: .9s infinite slidein;
+}
+
+@keyframes slidein {
+    from{
+        transform: translate(0px);
+    }
+
+    to{ 
+        transform: translate(30px);
+    }
+}
+
+/* RESPONSIVE HOME PAGE */
+
+@media screen and (max-width:700px){
+    .mathieu{
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+                                                                        /* about page */
+
+.mainBloc-about{
+    height: 100vh;
+    font-size: 10px;
+    background-image: url("/images/main-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex
+}
+
+.picture-bloc{
+    height: 100vh;
+    background-image: url("/images/second-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.final-picture-bloc{
+    height: 100vh;
+    font-size: 10px;
+    background-image: url("/images/third-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.guillemet{
+    height: 40%;
+    width: 40%;
+    opacity: 0.2;
+}
+
+#title-citation{
+    color: whitesmoke;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+}
+
+#citation{
+    width: 300px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 64px 90px 0 387px;
+    animation: effectY 2.5s linear forwards;
+}
+
+.text{
+    margin: 70px;
+}
+
+.text h2{
+    letter-spacing: 3px;
+}
+
+.text p{
+    margin-top: 25px;
+}
+
+.text-bloc{
+    height: 60vh;
+    display: flex;
+}
+
+.text-bloc img{
+    height: 60%;
+    padding: 10px;
+    margin: 80px 65px 0 102px;
+    border: 2px solid #968D88;
+}
+
+
+@keyframes effectY{
+    0%{
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+                                                                          /* contact page */
+
+  .mainBloc-contact{
+    height: 100vh;
+    font-size: 10px;
+    background-image: url("/images/contact.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+}
+
+#contact{
+    width: 350px;
+    margin: auto 0;
+    color: whitesmoke;
+    font-size: 4vw;
+}
+
+#text-contact{
+    height: 20vh;
+    margin: 100px;
+    line-height: 20px;
+}
+
+#formulaire-bloc{
+    height: 1200px;
+    background-color:#E2E2DF;
+}
+
+#formulaire-bloc h1{ 
+    width: 490px;
+    margin: auto;
+    margin-bottom: 40px;
+    color: whitesmoke;
+    font-size: 6vw;
+}
+
+
+#formulaire{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    background-color: whitesmoke;
+}
+
+.cssform p input[type="text"] {
+    border: none;
+    margin-left: 120px;
+    font-family: 'Questrial', sans-serif;
+    width: 60%;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    color: black;
+    font-size: 1em;
+    margin-bottom: 22px;
+  }
+  
+.cssform label {
+    margin-left: 60px;
+    margin-top: 40px ;
+    font-family: 'Questrial', sans-serif;
+    display: flex;
+  }
+  
+.cssform textarea {
+    width: 60%;
+    font-family: 'Questrial', sans-serif;
+    height: 300px;
+    margin: 40px 0 40px 120px;
+    padding: 20px;
+  }
+
+.bouton {
+    display: block;
+    width: 152px;
+    height: 32px;
+    background-color: rgb(71, 71, 91);
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    margin: 0 auto;
+  }
+
+#myform{
+    margin-top: 10px;
+}
