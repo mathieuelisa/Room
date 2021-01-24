@@ -1,44 +1,136 @@
-<div class="first-container">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROOM</title>
 
-    <div class="firstBloc">
-            <%- include("partials/header") -%>
-    </div> 
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
 
-<div class="secondBloc"> 
+    <!-- Scroll text -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Css and Font style -->
+    <link rel="stylesheet" type="text/css" href="/css/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
 
-    <h2 class="title-secondBloc">Découvrez des façons innovantes de décorer</h2>   
-    <p class="text-secondBloc">Ces dernières décennies, l’ameublement à su se renouveler et se réinventer en s’ouvrant à d’autres disciplines. 
-        C’est ainsi que des artistes contemporains ont été sollicités pour collaborer avec les marques les plus prestigieuses dans le cadre de collections originales et signées.
-    </p>
-    <div id="placement">
-        <div>
-            <p class="shop"> <a id="shopnow" href="/shop">SHOP NOW</a></p>
-        </div>
-        <div id="arrowDiv">
-            <img class="arrow" src="images/icon-arrow.svg" alt="arrow">
-        </div>
+  <body>
+
+    <div class="loader">
+      <H1 class="title-loader">room</H1>
     </div>
 
-</div>
+    <div class="first-container">
+      <div class="firstBloc"> 
+        <%- include("partials/header") -%>
 
-</div>
+      </div>
 
-<div class="second-container">
-<div class="carre1">
-</div>
-
-<div class="carre2">
-    <h1 class="title-carre2">ABOUT OUR FURNITURE</h1>
-        <p class="text-carre2">Our multifunctional collection blends design and function to suit your individual taste.
-        Make each room unique, or pick a cohesive theme that best express your interests and what
-        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-        or anything in between. Product specialists are available to help you create your dream space.
+      <div class="secondBloc">
+        <h2 class="title-secondBloc">
+            <span id="green-title">Decouvrez</span> des façons innovantes de décorer
+        </h2>
+        <p class="text-secondBloc">
+          Ces dernières décennies, l’ameublement à su se renouveler et se
+          réinventer en s’ouvrant à d’autres disciplines. C’est ainsi que des
+          artistes contemporains ont été sollicités afin de collaborer avec nous
+          dans le cadre de collections originales et signées.
         </p>
-</div>
+        <div id="placement">
+          <div>
+            <p class="shop"><a id="shopnow" href="/shop">SHOP NOW</a></p>
+          </div>
+          <div id="arrowDiv">
+            <img class="arrow" src="images/icon-arrow.svg" alt="arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="carre3">
-</div>
+    <div class="second-container">
+      <div class="carre1"></div>
 
-</div>
+      <div class="carre2" data-aos="fade-left" data-aos-duration="3000">
 
-<%- include("partials/footer") -%>
+        <h1 class="title-carre2">CONCERNANT NOTRE AMEUBLEMENT</h1>
+        <p class="text-carre2" >
+          La quête d'un confort domestique est l'idée fixe qui mènera à la création de nos meubles.
+          L'inspiration pour l'élaboration de nos mobiliers se fait via différents
+          canaux dont celui de la nature, du bois et du pin. 
+          La déco nordique devient rapidement le porte-parole du meuble design dans l'inconscient collectif.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="third-container">
+        <div class="carre3"></div>
+
+      <div class="carre2" data-aos="fade-right" data-aos-duration="3000">
+
+        <h1 class="title-carre2">CONCERNANT NOTRE SAVOIR-FAIRE</h1>
+        <p class="text-carre2" >
+          Spécialisés dans les décos intérieurs suédoises, nous sommes à même de vous proposer des produits de qualités
+          qui répondent parfaitement avec vos attentes. 
+          Le savoir faire allié à l'élégance de nos meubles scandinaves saura répondre
+          à la moindre de vos envies.
+          Toujours bien pensé, vous retrouverez de page en page les éléments spécifiques à cette décoration nordique.
+        </p>
+
+      </div>
+      <button class="buttonScroll">UP</button>
+    </div>
+
+    <div class="fourth-container">
+
+      <div class="inspiration" data-aos="fade-up" data-aos-duration="3000">
+        <h3>INSPIRATION</h3>
+      </div>
+
+      <div class="image-inspiration">
+       <img src="images/inspiration-1.jpg" alt="">
+
+       <div class="text-inspiration">
+
+         <div class="title-inspiration" data-aos="fade-up" data-aos-duration="2000">
+            <H1>Be original</H1>
+         </div>
+
+         <div class="text-carre2">
+          <p>
+            Avant-gardiste lors de sa création, 
+            iconique rosé aujourd'hui, habillé par Jean Paul Gaultier, 
+            cette collection « Shenzy » est une référence en terme de modularité et de créativité.
+          </p>
+         </div>
+
+         <div class="button-inspiration">
+          <button class="button-collection">SHENZY COLLECTION</button>
+         </div>
+         
+         
+       </div>
+      </div>
+
+    </div>
+
+    <div class="cookiesAndMentions">
+      <p><a href="/mentions">Mentions legales & Cookies</a></p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="home.js"></script>
+  </body>
+</html>

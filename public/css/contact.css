@@ -1,0 +1,203 @@
+/* contact page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  font-family: "Questrial", sans-serif;
+}
+
+/* HEADER */
+
+.logo {
+  height: 20px;
+  margin: 15px 0 0px 35px;
+}
+
+#navbar {
+  width: 100%;
+  height: min-content;
+}
+
+#navbar ul {
+  display: flex;
+  height: 45px;
+  margin-top: 20px;
+}
+
+.navbar-items {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.borderLine {
+  border-bottom: 2px solid white;
+}
+
+.mainBloc-contact {
+  height: 100vh;
+  font-size: 10px;
+  background-image: url("/images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+}
+
+#title-contact {
+  margin: auto 0;
+  color: whitesmoke;
+  font-size: 4vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#text-contact {
+  margin: 100px;
+  line-height: 20px;
+  color: #495057;
+  font-size: 1.1em;
+}
+
+#formulaire-bloc {
+  height: 1100px;
+  background-image: url("/images/lampe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#formulaire-bloc h1 {
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  color: whitesmoke;
+  font-size: 6vw;
+}
+
+#formulaire {
+  width: 50%;
+  height: 80%;
+  padding-top: 10px;
+  margin: auto;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.cssform p input[type="text"] {
+  border: none;
+  margin: 13px 0 15px 59px;
+  font-family: "Questrial", sans-serif;
+  width: 75%;
+  background-color: transparent;
+  border-bottom: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+
+.cssform label {
+  margin-left: 60px;
+  margin-top: 40px;
+  font-family: "Questrial", sans-serif;
+  display: flex;
+  color: whitesmoke;
+}
+
+.cssform textarea {
+  width: 75%;
+  font-family: "Questrial", sans-serif;
+  line-height: 23px;
+  margin-left: 60px;
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 1.3em;
+}
+
+/* SEND BUTTON */
+
+.bouton {
+  display: block;
+  width: 152px;
+  height: 32px;
+  background-color: rgb(71, 71, 91);
+  border: 2px solid whitesmoke;
+  border-radius: 15px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: "Questrial", sans-serif;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.bouton:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.charsRemaining {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+/* NEWLETTERS + CHECKBOX */
+
+.wrapper {
+  height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.checkbox {
+  appearance: none;
+  -webkit-apparence: none;
+  height: 16px;
+  width: 16px;
+  background-color: lightgrey;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  outline: none;
+}
+
+.checkbox:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  font-size: 11px;
+  content: "\f00c";
+  color: white;
+  display: none;
+}
+
+.checkbox:checked,
+.checkbox:hover {
+  background-color: grey;
+}
+
+.checkbox:checked:after {
+  display: block;
+}
+
+.text-newletters {
+  color: whitesmoke;
+}

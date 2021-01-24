@@ -1,67 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROOM</title>
 
+    <!-- Favicon Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
 
+    <!-- Scroll text -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Css and Font style -->
+    <link rel="stylesheet" type="text/css" href="/css/about.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <div class="mainBloc-about">
-        <%- include("partials/header") -%>
-        
-        <div id="citation">
-                <img class="guillemet" src="/images/guillemet.png" alt="">
-            <h2 id="title-citation">J’aime explorer des domaines qui me font peur. Lorsque j’ai peur, je sais que je vais dans la bonne direction...</h2>
-                <p>Mathieu Elisa</p>
-        </div>
+      <%- include("partials/header") -%>
+
+      <div id="citation" data-aos="fade-down" data-aos-duration="1500">
+        <img class="guillemet-1" src="/images/guillemet.png" alt="" />
+        <h2 id="title-citation">
+          J’aime explorer des domaines qui me font peur. Lorsque j’ai peur, je
+          sais que je vais dans la bonne direction...
+        </h2><br>
+        <p>Mathieu Elisa</p>
+      </div>
     </div>
 
-    <div class="text-bloc">
-        <img src="images/profil.jpg" alt="">
-        <div class="text">
-            <h2>Une philosophie...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                <br>Mi sit amet mauris commodo. Integer malesuada nunc vel risus commodo.<br>
-                Risus ultricies tristique nulla aliquet enim tortor at auctor. 
-                Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. At consectetur lorem donec massa sapien faucibus et. 
-                <br><br>Lacus sed turpis tincidunt id aliquet. Diam sollicitudin tempor id eu. Aliquet lectus proin nibh nisl condimentum. 
-                Ac odio tempor orci dapibus ultrices. <br><br>Nibh venenatis cras sed felis eget velit aliquet sagittis id. Hendrerit dolor magna eget est lorem ipsum dolor sit amet. 
-                Egestas quis ipsum suspendisse ultrices. Quis viverra nibh cras pulvinar mattis nunc sed. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. 
-                Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies.<br>Sit amet volutpat consequat mauris nunc congue nisi. 
-                Imperdiet dui accumsan sit amet nulla facilisi. Vestibulum sed arcu non odio euismod lacinia. 
-            </p>
-        </div>
-    
-
+    <div class="text-bloc" data-aos="fade-right" data-aos-duration="3000">
+      <img class="pictures" src="images/profil.jpg" alt="" />
+      <div class="text">
+        <h2>Une philosophie...</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />Mi
+          sit amet mauris commodo. Integer malesuada nunc vel risus commodo.<br />
+          Risus ultricies tristique nulla aliquet enim tortor at auctor.
+          Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. At
+          consectetur lorem donec massa sapien faucibus et.
+          <br /><br />Lacus sed turpis tincidunt id aliquet. Diam sollicitudin
+          tempor id eu. Aliquet lectus proin nibh nisl condimentum. Ac odio
+          tempor orci dapibus ultrices. <br /><br />Nibh venenatis cras sed
+          felis eget velit aliquet sagittis id. Hendrerit dolor magna eget est
+          lorem ipsum dolor sit amet. Egestas quis ipsum suspendisse ultrices.
+          Quis viverra nibh cras pulvinar mattis nunc sed. Sit amet mauris
+          commodo quis imperdiet massa tincidunt nunc pulvinar. Iaculis eu non
+          diam phasellus vestibulum lorem sed risus ultricies.<br />Sit amet
+          volutpat consequat mauris nunc congue nisi. Imperdiet dui accumsan sit
+          amet nulla facilisi. Vestibulum sed arcu non odio euismod lacinia. <br><br>
+          Amet volutpat consequat mauris nunc congue nisi. Imperdiet dui accumsan
+        </p>
+      </div>
     </div>
-    
+
     <div class="picture-bloc"></div>
 
-    
-    <div class="text-bloc">
-        <div class="text">
-            <h2>Un état d'esprit...</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                <br>Mi sit amet mauris commodo. Integer malesuada nunc vel risus commodo.<br>
-                Risus ultricies tristique nulla aliquet enim tortor at auctor. 
-                Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. At consectetur lorem donec massa sapien faucibus et. 
-                <br><br>Lacus sed turpis tincidunt id aliquet. Diam sollicitudin tempor id eu. Aliquet lectus proin nibh nisl condimentum. 
-                Ac odio tempor orci dapibus ultrices. <br><br>Nibh venenatis cras sed felis eget velit aliquet sagittis id. Hendrerit dolor magna eget est lorem ipsum dolor sit amet. 
-                Egestas quis ipsum suspendisse ultrices. Quis viverra nibh cras pulvinar mattis nunc sed. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar. 
-                Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies.<br>Sit amet volutpat consequat mauris nunc congue nisi. 
-                Imperdiet dui accumsan sit amet nulla facilisi. Vestibulum sed arcu non odio euismod lacinia. 
-            </p>
-        </div>
-        <img src="images/profil2.jpg" alt="">
+    <div class="text-bloc" data-aos="fade-left" data-aos-duration="3000">
+      <div class="text">
+        <h2>Un état d'esprit...</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />Mi
+          sit amet mauris commodo. Integer malesuada nunc vel risus commodo.<br />
+          Risus ultricies tristique nulla aliquet enim tortor at auctor.
+          Ultricies mi eget mauris pharetra et ultrices neque ornare aenean. At
+          consectetur lorem donec massa sapien faucibus et.
+          <br /><br />Lacus sed turpis tincidunt id aliquet. Diam sollicitudin
+          tempor id eu. Aliquet lectus proin nibh nisl condimentum. Ac odio
+          tempor orci dapibus ultrices. <br /><br />Nibh venenatis cras sed
+          felis eget velit aliquet sagittis id. Hendrerit dolor magna eget est
+          lorem ipsum dolor sit amet. Egestas quis ipsum suspendisse ultrices.
+          Quis viverra nibh cras pulvinar mattis nunc sed. Sit amet mauris
+          commodo quis imperdiet massa tincidunt nunc pulvinar. Iaculis eu non
+          diam phasellus vestibulum lorem sed risus ultricies.<br />Sit amet
+          volutpat consequat mauris nunc congue nisi. Imperdiet dui accumsan sit
+          amet nulla facilisi. Vestibulum sed arcu non odio euismod lacinia.<br><br>
+          Omet volutpat consequat mauris nunc congue nisi. Imperdiet dui accumsan
+        </p>
+      </div>
+      <img class="pictures" src="images/profil2.jpg" alt="" />
     </div>
 
     <div class="final-picture-bloc">
-
-        <div id="citation">
-            <img class="guillemet" src="/images/guillemet.png" alt="">
-                <h2 id="title-citation">L'élégance, n'est pas n'est pas une question de luxe, de richesse. Mais d'attitude....</h2>
-                    <p>Mathieu Elisa</p>
-        </div>
-
+      <div id="citation" data-aos="fade-down" data-aos-duration="1500">
+        <img class="guillemet-2" src="/images/guillemet.png" alt="" />
+        <h2 id="title-citation">
+          L'élégance, n'est pas n'est pas une question de luxe, de richesse.
+          Mais d'attitude....
+        </h2><br>
+        <p>Mathieu Elisa</p>
+      </div>
     </div>
 
-  
-
-
-
-
-<%- include("partials/footer") -%>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="about.js"></script>
+  </body>
+</html>

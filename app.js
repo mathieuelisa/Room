@@ -25,15 +25,25 @@ app.get("/contact", function(req,res){
     res.render("contact")
 })
 
-app.post("/contact", function(req,res){
-   var prenom =  req.body.prenom
-   var nom = req.body.nom
+//////Cookies and Mentions//////////////////////////
 
-   console.log(prenom,nom)
+
+app.get("/mentions", function(req,res){
+    res.render("mentions")
 })
 
 
-var prenom = "2C14C2172A6125181E9FCAC36A"
+
+app.post("/contact", function(req,res){
+   var nom = req.body.nom
+   var prenom =  req.body.prenom
+   var tel = req.body.tel
+   var mail = req.body.mail
+   var message = req.body.comments
+
+   console.log(nom,prenom,tel, mail, message)
+})
+
 
 
 

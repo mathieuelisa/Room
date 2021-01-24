@@ -1,0 +1,141 @@
+/* about page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  font-family: "Questrial", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+.logo {
+  height: 20px;
+  margin: 15px 0 0px 35px;
+}
+
+#navbar {
+  width: 100%;
+  height: min-content;
+}
+
+#navbar ul {
+  display: flex;
+  height: 45px;
+  margin-top: 20px;
+}
+
+.navbar-items {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.borderLine {
+  border-bottom: 2px solid white;
+}
+
+.mainBloc-about {
+  height: 100vh;
+  font-size: 10px;
+  background-image: url("/images/main-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.picture-bloc {
+  height: 100vh;
+  background-image: url("/images/second-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.final-picture-bloc {
+  height: 100vh;
+  font-size: 10px;
+  background-image: url("/images/third-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.guillemet-1 {
+  height: 38%;
+  width: 72%;
+  opacity: 0.2;
+}
+
+.guillemet-2 {
+  height: 40%;
+  width: 40%;
+  opacity: 0.2;
+}
+
+#title-citation {
+  color: whitesmoke;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+}
+
+#citation {
+  width: 300px;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 90px 0 387px;
+}
+
+.text {
+  margin: 55px;
+  font-size: 1.1em;
+}
+
+.text h2 {
+  letter-spacing: 3px;
+}
+
+.text p {
+  margin-top: 25px;
+}
+
+.text-bloc {
+  height: 70vh;
+  display: flex;
+  width: 100%;
+  color: #495057;
+}
+
+.text-bloc img {
+  height: 60%;
+  padding: 10px;
+  margin: 80px 65px 0 102px;
+  border: 2px solid #495057;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1035px) {
+  .text-bloc img {
+    display: none;
+  }
+
+  .text-bloc {
+    height: min-content;
+  }
+}

@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  width: 100%;
+  font-family: "Questrial", sans-serif;
+}
+
+/* HEADER */
+
+.logo {
+  height: 20px;
+  margin: 15px 0 0px 35px;
+}
+
+#navbar {
+  width: 100%;
+  height: min-content;
+}
+
+#navbar ul {
+  display: flex;
+  height: 45px;
+  margin-top: 20px;
+}
+
+.navbar-items {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.5em;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+.borderLine {
+  border-bottom: 2px solid white;
+}
+
+.mainBloc-shop {
+  height: 100vh;
+  font-size: 10px;
+  background-image: url("/images/construction.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
