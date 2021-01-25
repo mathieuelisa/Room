@@ -360,9 +360,7 @@ ul li {
 .loader {
   position: fixed;
   z-index: 99;
-  top: 0;
-  left: 0;
-  background-color: white;
+  background-color: whitesmoke;
   height: 100%;
   width: 100%;
   display: flex;
@@ -376,6 +374,11 @@ ul li {
 }
 
 .loader.hidden {
+  animation: fadeOut 2s;
+  animation-fill-mode: forwards;
+}
+
+.title-loader.hidden {
   animation: fadeOut 2s;
   animation-fill-mode: forwards;
 }

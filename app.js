@@ -1,12 +1,37 @@
 const express = require ("express")
 const ejs = require("ejs")
 const bodyParser = require("body-parser")
+const mongoose = require('mongoose');
+
 
 const app = express()
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
+
+mongoose.connect('mongodb://localhost:27017/clientsRoomDB', 
+{useNewUrlParser: true, useUnifiedTopology: true});
+
+const clientRoomSchema = new mongoose.Schema({
+    nom: String,
+    prenom: String,
+    tel: Number,
+    mail: String,
+    message: String
+})
+
+const Client = mongoose.model("User", clientRoomSchema);
+
+// const client = new Client ({
+//     nom: req.body.nom,
+//     prenom: req.body.prenom,
+//     tel: req.body.tel,
+//     mail:req.body.mail,
+//     message:req.body.message
+// })
+
+// client.save();
 
 
 app.get("/home", function(req,res){
@@ -35,13 +60,24 @@ app.get("/mentions", function(req,res){
 
 
 app.post("/contact", function(req,res){
-   var nom = req.body.nom
-   var prenom =  req.body.prenom
-   var tel = req.body.tel
-   var mail = req.body.mail
-   var message = req.body.comments
 
-   console.log(nom,prenom,tel, mail, message)
+   let firstName = req.body.nom
+   let lastName =  req.body.prenom
+   let numberTel = req.body.tel
+   let mail = req.body.mail
+   let message = req.body.comments
+
+    const client = new Client ({
+        nom: firstName,
+        prenom: lastName,
+        tel: numberTel,
+        mail: mail,
+        message: message
+    })
+    
+    client.save();
+
+   console.log("You have a new user: " + firstName + " " + lastName)
 })
 
 

@@ -77,6 +77,7 @@ window.addEventListener("load", function(){
 
 })
 
+
 // SCROLL TEXT
 
   AOS.init();
