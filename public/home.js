@@ -68,15 +68,32 @@ function handleScroll(){
 
 document.addEventListener("scroll", handleScroll)
 
-// LOADING PAGE
+// LOADING PAGE WITH ADDEVENTLISTENER
 
-window.addEventListener("load", function(){
-  const loader = document.querySelector(".loader")
+// window.addEventListener("load", function(){
+//   // const loader = document.querySelector(".loader")
+//   // const titleLoader = document.querySelector(".title-loader")
 
-  loader.className += " hidden"
+//   // loader.className += " hidden"
 
-})
+// })
 
+
+// LOADING PAGE WITH SETTIMEOUT
+
+const loader = document.querySelector(".loader")
+const titleLoader = document.querySelector(".title-loader")
+
+function timeOut(){
+  setTimeout(function() {
+    loader.className += " hidden"
+  }, 3000)
+    setTimeout(function(){
+      titleLoader.className += " hidden"
+    },1000);
+};
+
+timeOut()
 
 // SCROLL TEXT
 

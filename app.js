@@ -3,7 +3,6 @@ const ejs = require("ejs")
 const bodyParser = require("body-parser")
 const mongoose = require('mongoose');
 
-
 const app = express()
 
 app.use(express.static('public'));
@@ -23,16 +22,6 @@ const clientRoomSchema = new mongoose.Schema({
 
 const Client = mongoose.model("User", clientRoomSchema);
 
-// const client = new Client ({
-//     nom: req.body.nom,
-//     prenom: req.body.prenom,
-//     tel: req.body.tel,
-//     mail:req.body.mail,
-//     message:req.body.message
-// })
-
-// client.save();
-
 
 app.get("/home", function(req,res){
     res.render("home")
@@ -50,14 +39,11 @@ app.get("/contact", function(req,res){
     res.render("contact")
 })
 
-//////Cookies and Mentions//////////////////////////
-
+//COOKIES and MENTIONS
 
 app.get("/mentions", function(req,res){
     res.render("mentions")
 })
-
-
 
 app.post("/contact", function(req,res){
 
@@ -73,18 +59,25 @@ app.post("/contact", function(req,res){
         tel: numberTel,
         mail: mail,
         message: message
-    })
-    
+    })  
     client.save();
+
+    res.redirect("home")
 
    console.log("You have a new user: " + firstName + " " + lastName)
 })
 
+// Get all the clients mail
 
-
-
-
-
+// Client.find(function(err, clients){
+//     if(err){
+//         console.log(err);
+//     } else {
+//          clients.forEach(function(client) {
+//             console.log(client.mail);
+//         });
+//     }
+// })
 
 
 app.listen(3000, function(){

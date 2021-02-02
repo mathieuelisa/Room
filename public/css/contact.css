@@ -51,7 +51,6 @@ ul li {
   background-image: url("/images/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   display: flex;
 }
@@ -61,6 +60,7 @@ ul li {
   color: whitesmoke;
   font-size: 4vw;
   position: absolute;
+  letter-spacing: 13px;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -87,6 +87,7 @@ ul li {
   margin-bottom: 40px;
   color: whitesmoke;
   font-size: 6vw;
+  letter-spacing: 13px;
 }
 
 #formulaire {
@@ -106,6 +107,7 @@ ul li {
   background-color: transparent;
   border-bottom: 1px solid whitesmoke;
   color: whitesmoke;
+  font-size: 1.4em;
 }
 
 .cssform label {
