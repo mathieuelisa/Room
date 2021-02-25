@@ -1,3 +1,12 @@
+/* ALL MY FONT */
+
+@font-face {
+  font-family: "Dolce Vita";
+  src: url("/polices/Dolce Vita.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* about page */
 * {
   margin: 0;
@@ -75,13 +84,7 @@ ul li {
   background-position: center;
 }
 
-.guillemet-1 {
-  height: 38%;
-  width: 72%;
-  opacity: 0.2;
-}
-
-.guillemet-2 {
+.guillemet {
   height: 40%;
   width: 40%;
   opacity: 0.2;
@@ -94,11 +97,15 @@ ul li {
 }
 
 #citation {
-  width: 300px;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  margin: 0px 90px 0 387px;
+  width: 309px;
+  height: 20%;
+  margin: 130px 50px 0 214px;
+}
+
+#citation2 {
+  width: 309px;
+  height: 20%;
+  margin: 0px 50px 0 214px;
 }
 
 .text {
@@ -107,7 +114,7 @@ ul li {
 }
 
 .text h2 {
-  letter-spacing: 3px;
+  font-family: "Dolce Vita";
 }
 
 .text p {
@@ -115,27 +122,84 @@ ul li {
 }
 
 .text-bloc {
-  height: 70vh;
+  height: 606px;
   display: flex;
   width: 100%;
-  color: #495057;
+  color: whitesmoke;
+  background-color: #232323;
 }
 
-.text-bloc img {
-  height: 60%;
-  padding: 10px;
-  margin: 80px 65px 0 102px;
-  border: 2px solid #495057;
+.text-bloc2 {
+  margin: 80px 40px 80px 40px;
+  width: 55%;
+}
+
+.container-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #232323;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profil-card {
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 170px;
+  width: 170px;
+  overflow: hidden;
+}
+
+.container-profil {
+  margin-top: 10px;
+  width: 200px;
+  background-color: #232323;
+}
+
+.myPics {
+  height: 136%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.title-card {
+  font-family: "Dolce Vita";
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.text-card {
+  background-color: #232323;
+  height: 200px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: justify;
 }
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1035px) {
-  .text-bloc img {
-    display: none;
-  }
+@media screen and (max-width: 1135px) {
+  /* .text-bloc {
+    height: min-content;
+  } */
 
   .text-bloc {
+    flex-direction: column;
     height: min-content;
+  }
+
+  .container-card {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .text-bloc2 {
+    text-align: center;
+    width: 100%;
   }
 }

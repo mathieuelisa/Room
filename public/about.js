@@ -1,9 +1,3 @@
-// SCROLL TEXT WITH SCROLL REVEAL
-
-ScrollReveal().reveal('.pictures', {
-  reset: true, delay: 700
-});
-
 // NAVBAR 
 
 var navbar = document.querySelectorAll(".navbar-items");
@@ -18,6 +12,9 @@ for (let i = 0; i < navbar.length; i++) {
   });
 }
 
-// SCROLL TEXT
+// SCROLL TEXT AND PICS WITH AOS 
 
 AOS.init();
+
+
+
