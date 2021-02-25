@@ -1,3 +1,12 @@
+/* ALL MY FONT */
+
+@font-face {
+  font-family: "Dolce Vita";
+  src: url("/polices/Dolce Vita.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* about page */
 * {
   margin: 0;
@@ -107,7 +116,7 @@ ul li {
 }
 
 .text h2 {
-  letter-spacing: 3px;
+  font-family: "Dolce Vita";
 }
 
 .text p {
@@ -115,27 +124,82 @@ ul li {
 }
 
 .text-bloc {
-  height: 70vh;
+  height: 606px;
   display: flex;
   width: 100%;
-  color: #495057;
+  color: whitesmoke;
+  background-color: #232323;
 }
 
-.text-bloc img {
-  height: 60%;
-  padding: 10px;
-  margin: 80px 65px 0 102px;
-  border: 2px solid #495057;
+.text-bloc2 {
+  margin: 80px 40px 80px 40px;
+  width: 55%;
+}
+
+.container-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #232323;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.profil-card {
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 170px;
+  width: 170px;
+  overflow: hidden;
+}
+
+.container-profil {
+  margin-top: 10px;
+  width: 200px;
+  background-color: #232323;
+}
+
+.myPics {
+  height: 136%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.title-card {
+  font-family: "Dolce Vita";
+  text-align: center;
+  margin-top: 15px;
+}
+
+.text-card {
+  background-color: #232323;
+  height: 200px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 27px;
 }
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1035px) {
-  .text-bloc img {
-    display: none;
-  }
+@media screen and (max-width: 1135px) {
+  /* .text-bloc {
+    height: min-content;
+  } */
 
   .text-bloc {
+    flex-direction: column;
     height: min-content;
+  }
+
+  .container-card {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .text-bloc2 {
+    text-align: center;
+    width: 100%;
   }
 }

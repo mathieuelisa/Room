@@ -4,23 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROOM</title>
-
+    
+    
     <!-- Favicon Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
-
+    
     <!-- Scroll text -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Caroussel -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
     
     <!-- Css and Font style -->
     <link rel="stylesheet" type="text/css" href="/css/home.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
     
   </head>
 
@@ -30,14 +33,46 @@
       <h1 class="title-loader">room</h1>
     </div>
 
+    <div id="navbar">
+      <ul>
+        <a href="/home"><img class="logo" src="images/logo.svg" alt="logo"/></a>
+        <li><a id="home" class="navbar-items" href="/home">home</a></li>
+        <li><a id="shop" class="navbar-items" href="/shop">shop</a></li>
+        <li><a id="about" class="navbar-items" href="/about">about</a></li>
+        <li><a id="contacts" class="navbar-items" href="/contact">contact</a></li>
+      </ul>
+    </div>
+    
+    
     <div class="first-container">
-      <div class="firstBloc"> 
-        <%- include("partials/header") -%>
+      
+      <div class="firstBloc" id="slider">
+
+        <!-- card -->
+        <div class="card" > 
+
+            <div>
+              <img src="images/desktop-image-hero-1.jpg" alt="">
+            </div>
+        
+            <div>
+              <img src="images/desktop-pics1.jpg" alt="">
+            </div>
+      
+            <div>
+              <img src="images/desktop-pics2.jpg" alt="">
+            </div>
+    
+            <div>
+              <img src="images/desktop-pics3.jpg" alt="">
+            </div>
+            
+        </div>
+        <!-- end card -->
 
       </div>
-
       <div class="secondBloc">
-        <h2 class="title-secondBloc">
+        <h2 class="title-secondBloc title-font">
             <span id="green-title">Decouvrez</span> des façons innovantes de décorer
         </h2>
         <p class="text-secondBloc">
@@ -62,7 +97,7 @@
 
       <div class="carre2" >
 
-        <h1 class="title-carre2">CONCERNANT NOTRE AMEUBLEMENT</h1>
+        <h1 class="title-carre2 title-font">CONCERNANT NOTRE AMEUBLEMENT</h1>
         <p class="text-carre2" >
           La quête d'un confort domestique est l'idée fixe qui mènera à la création de nos meubles.
           L'inspiration pour l'élaboration de nos mobiliers se fait via différents
@@ -79,7 +114,7 @@
 
       <div class="carre2" data-aos="fade-right" data-aos-duration="3000">
 
-        <h1 class="title-carre2">CONCERNANT NOTRE SAVOIR-FAIRE</h1>
+        <h1 class="title-carre2 title-font">CONCERNANT NOTRE SAVOIR-FAIRE</h1>
         <p class="text-carre2" >
           Spécialisés dans les décos intérieurs suédoises, nous sommes à même de vous proposer des produits de qualités
           qui répondent parfaitement avec vos attentes. 
@@ -89,13 +124,13 @@
         </p>
 
       </div>
-      <button class="buttonScroll">UP</button>
+      <button class="buttonScroll title-font">UP</button>
     </div>
 
     <div class="fourth-container">
 
       <div class="inspiration" data-aos="fade-up" data-aos-duration="3000">
-        <h3>INSPIRATION</h3>
+        <h3 class="title-font">INSPIRATION</h3>
       </div>
 
       <div class="image-inspiration">
@@ -104,14 +139,17 @@
        <div class="text-inspiration">
 
          <div class="title-inspiration" data-aos="fade-up" data-aos-duration="2000">
-            <H1>Be original</H1>
+            <H1 class="title-font">Be original</H1>
          </div>
 
          <div class="text-carre2">
           <p>
-            Avant-gardiste lors de sa création, 
-            iconique rosé aujourd'hui, habillé par Jean Paul Gaultier, 
-            cette collection « Shenzy » est une référence en terme de modularité et de créativité.
+            Experience our new portfolio of wallcovering,
+            featuring HOLLY HUNT Walls, Carlisle & Co., and ASSEMBLAGE. <br> <br>
+            These lines offer a range of materials, colors, textures, and production techniques to create exceptional spaces. <br>
+            Each collection features a distinct assortment and aesthetic, united by the signature HOLLY HUNT commitment to design, quality, and service. <br> <br>
+            HOLLY HUNT Wallcovering showcases the finest options available today and provides elevated solutions for any project.<br><br>
+            The broad artistic and stylistic vocabulary of Moss & Lam embellishes and enriches the interiors of any design space.
           </p>
          </div>
 
@@ -128,9 +166,17 @@
     <div class="cookiesAndMentions">
       <p><a href="/mentions">Mentions legales & Cookies</a></p>
     </div>
-
+    
+    <!-- Caroussel -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+    
+    <!-- Scroll Text -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="home.js"></script>
+    
+
   </body>
 </html>

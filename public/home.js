@@ -10,7 +10,7 @@ arrow.addEventListener("mouseleave", function () {
   document.querySelector(".arrow").classList.remove("arrow2");
 });
 
-
+// NAVBAR 
 
 var navbar = document.querySelectorAll(".navbar-items");
 
@@ -24,9 +24,9 @@ for (let i = 0; i < navbar.length; i++) {
   });
 }
 
-// TEXT CHANGE
+// TEXT CHANGE ON HOME TITLE
 
-let myGreenText = document.querySelector("#green-title")
+let myGreenText = document.querySelector("#green-title");
 
 function changeText(){
   setTimeout(function(){ 
@@ -68,16 +68,6 @@ function handleScroll(){
 
 document.addEventListener("scroll", handleScroll)
 
-// LOADING PAGE WITH ADDEVENTLISTENER
-
-// window.addEventListener("load", function(){
-//   // const loader = document.querySelector(".loader")
-//   // const titleLoader = document.querySelector(".title-loader")
-
-//   // loader.className += " hidden"
-
-// })
-
 
 // LOADING PAGE WITH SETTIMEOUT
 
@@ -85,10 +75,10 @@ const loader = document.querySelector(".loader")
 const titleLoader = document.querySelector(".title-loader")
 
 function timeOut(){
-  setTimeout(function() {
+  setTimeout(() => {
     loader.className += " hidden"
   }, 3000)
-    setTimeout(function(){
+    setTimeout(() => {
       titleLoader.className += " hidden"
     },1000);
 };
@@ -98,3 +88,17 @@ timeOut()
 // SCROLL TEXT
 
   AOS.init();
+
+// CARROUSEL
+
+$(document).ready(function(){
+    $('.card').slick({
+      dots: false,
+      infinite: true,
+      speed: 3000,
+      fade: true,
+      cssEase: 'linear',
+      autoplay: true,
+  autoplaySpeed: 6000,
+    });
+  });

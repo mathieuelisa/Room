@@ -1,3 +1,12 @@
+/* ALL MY FONT */
+
+@font-face {
+  font-family: "Dolce Vita";
+  src: url("/polices/Dolce Vita.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +17,10 @@ body {
   background-color: whitesmoke;
   width: 100%;
   font-family: "Questrial", sans-serif;
+}
+
+.title-font {
+  font-family: "Dolce Vita", sans-serif;
 }
 
 /* HEADER */
@@ -21,6 +34,12 @@ body {
   display: flex;
   height: 45px;
   margin-top: 20px;
+}
+
+#navbar {
+  position: absolute;
+  font-size: 10px;
+  z-index: 1;
 }
 
 .navbar-items {
@@ -49,17 +68,23 @@ ul li {
   height: 490px;
   font-size: 10px;
   flex-grow: 1;
-  background-image: url("/images/desktop-image-hero-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .secondBloc {
   width: 50%;
   margin: 0 auto;
   padding: 90px;
-  background-color: whitesmoke;
 }
 
 .text-secondBloc {
@@ -147,7 +172,6 @@ ul li {
 }
 
 .carre2 {
-  background-color: whitesmoke;
   width: 70%;
   height: 230px;
   padding: 60px 90px;
@@ -179,13 +203,11 @@ ul li {
 .fourth-container {
   height: 1200px;
   width: 100%;
-  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
 }
 
 .inspiration {
-  background-color: whitesmoke;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -194,10 +216,12 @@ ul li {
 .inspiration h3 {
   font-size: 16vw;
   text-align: center;
-  color: #d2d3d5;
+  color: #495057;
+  opacity: 0.2;
 }
 
 .image-inspiration img {
+  border-radius: 5px;
   width: 50%;
   margin: 50px;
 }
@@ -228,16 +252,35 @@ ul li {
 }
 
 .button-collection {
-  background-color: #f2a0a0;
-  height: 35px;
-  width: 180px;
-  border: none;
-  color: whitesmoke;
+  font-family: "Dolce Vita", sans-serif;
+  cursor: pointer;
+  letter-spacing: 5px;
+  height: 55px;
+  width: 235px;
+  border-radius: 6px;
+  border: 2px solid white;
+  background-color: whitesmoke;
+  color: #495057;
 }
 
 .button-collection:hover {
-  background-color: #f7b2ad;
-  width: 185px;
+  height: 55px;
+  width: 235px;
+  border-radius: 6px;
+  color: #495057;
+  background-color: #efefef;
+}
+
+.slick-list draggable {
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+}
+
+.cookiesAndMentions a {
+  text-decoration: none;
 }
 
 /* COOKIES CONTAINER */
