@@ -123,8 +123,59 @@ ul li {
 
 .text-bloc {
   height: 606px;
+<<<<<<< HEAD
   display: flex;
   width: 100%;
+  color: whitesmoke;
+  background-color: #232323;
+}
+
+.text-bloc2 {
+  margin: 80px 40px 80px 40px;
+  width: 55%;
+}
+
+.container-card {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #232323;
+  width: 45%;
+=======
+>>>>>>> ddbf18ede9402c914fde2a2c06f513c71d4ffbaf
+  display: flex;
+  justify-content: space-around;
+}
+
+.profil-card {
+  margin: 0 auto;
+  margin-top: 10px;
+  height: 170px;
+  width: 170px;
+  overflow: hidden;
+}
+
+.container-profil {
+  margin-top: 10px;
+  width: 200px;
+  background-color: #232323;
+}
+
+.myPics {
+  height: 136%;
+  width: 100%;
+<<<<<<< HEAD
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.title-card {
+  font-family: "Dolce Vita";
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+=======
   color: whitesmoke;
   background-color: #232323;
 }
@@ -168,9 +219,9 @@ ul li {
   font-family: "Dolce Vita";
   text-align: center;
   margin-top: 15px;
-  letter-spacing: 2px;
 }
 
+>>>>>>> ddbf18ede9402c914fde2a2c06f513c71d4ffbaf
 .text-card {
   background-color: #232323;
   height: 200px;
@@ -178,7 +229,10 @@ ul li {
   text-align: center;
   font-size: 13px;
   line-height: 27px;
+<<<<<<< HEAD
   text-align: justify;
+=======
+>>>>>>> ddbf18ede9402c914fde2a2c06f513c71d4ffbaf
 }
 
 /* RESPONSIVE */

@@ -13,7 +13,10 @@ for (let i = 0; i < navbar.length; i++) {
 }
 
 // SCROLL TEXT AND PICS WITH AOS 
+<<<<<<< HEAD
 
 AOS.init();
 
+=======
+>>>>>>> ddbf18ede9402c914fde2a2c06f513c71d4ffbaf
 
