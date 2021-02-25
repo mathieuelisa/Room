@@ -16,5 +16,6 @@ for (let i = 0; i < navbar.length; i++) {
 
 AOS.init();
 
+ok
 
 
