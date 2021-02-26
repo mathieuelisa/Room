@@ -104,6 +104,7 @@ ul li {
   color: whitesmoke;
   font-size: 1.2vw;
   letter-spacing: 1px;
+  font-family: "Dolce Vita";
 }
 
 #citation {
@@ -116,19 +117,6 @@ ul li {
   width: 309px;
   height: 20%;
   margin: 0px 50px 0 214px;
-}
-
-.text {
-  margin: 55px;
-  font-size: 1.1em;
-}
-
-.text h2 {
-  font-family: "Dolce Vita";
-}
-
-.text p {
-  margin-top: 25px;
 }
 
 .text-bloc {
