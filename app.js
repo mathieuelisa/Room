@@ -31,10 +31,6 @@ app.get("/about", function(req,res){
     res.render("about")
 })
 
-app.get("/shop", function(req,res){
-    res.render("shop")
-})
-
 app.get("/contact", function(req,res){
     res.render("contact")
 })

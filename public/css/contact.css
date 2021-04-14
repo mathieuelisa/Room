@@ -46,7 +46,7 @@ body {
 ul li {
   list-style: none;
   font-size: 1.5em;
-  margin-left: 35px;
+  margin-left: 25px;
   margin-top: 20px;
 }
 
@@ -132,10 +132,13 @@ ul li {
   width: 75%;
   font-family: "Questrial", sans-serif;
   line-height: 23px;
-  margin-left: 60px;
   margin-top: 30px;
   padding: 20px;
-  font-size: 1.3em;
+  font-size: 1em;
+}
+
+.comms {
+  text-align: center;
 }
 
 /* SEND BUTTON */
@@ -212,4 +215,70 @@ ul li {
 
 .text-newletters {
   color: whitesmoke;
+}
+
+@media screen and (max-width: 945px) {
+  p {
+    text-align: center;
+  }
+
+  #fname {
+    width: 43px;
+  }
+
+  #lname {
+    width: 66px;
+  }
+
+  #phone {
+    width: 82px;
+  }
+
+  #mail {
+    width: 48px;
+  }
+
+  #coms {
+    width: 113px;
+  }
+
+  #formulaire {
+    height: 80%;
+    width: 80%;
+  }
+
+  #formulaire-bloc {
+    height: 776px;
+  }
+
+  #title-contact {
+    top: 27%;
+  }
+
+  #text-contact {
+    margin: 50px;
+  }
+
+  .cssform label {
+    margin: 0 auto;
+  }
+
+  .cssform p input[type="text"] {
+    margin: 19px 0;
+    font-size: 13px;
+  }
+
+  .cssform textarea {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .text-newletters,
+  .checkbox {
+    display: none;
+  }
+
+  .mainBloc-contact {
+    height: 50vh;
+  }
 }

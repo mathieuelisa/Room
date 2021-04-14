@@ -35,7 +35,7 @@ body {
 ul li {
   list-style: none;
   font-size: 1.5em;
-  margin-left: 35px;
+  margin-left: 25px;
   margin-top: 20px;
 }
 
@@ -99,4 +99,19 @@ ul li {
 .showBtn {
   opacity: 1;
   pointer-events: all;
+}
+
+@media screen and (max-width: 945px) {
+  .main-text {
+    width: 85%;
+    margin: 0 28px;
+  }
+
+  .buttonScroll {
+    display: none;
+  }
+
+  .main-text {
+    height: 5200px;
+  }
 }
