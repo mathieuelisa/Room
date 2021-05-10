@@ -76,10 +76,11 @@ ul li {
 }
 
 #text-contact {
-  margin: 100px;
+  padding: 100px;
   line-height: 20px;
   color: #495057;
   font-size: 1.1em;
+  text-align: justify;
 }
 
 #formulaire-bloc {
@@ -93,8 +94,7 @@ ul li {
 #formulaire-bloc h1 {
   font-family: "Dolce Vita", sans-serif;
   text-align: center;
-  padding-top: 40px;
-  margin-bottom: 40px;
+  padding: 40px 0;
   color: whitesmoke;
   font-size: 6vw;
   letter-spacing: 13px;
@@ -102,7 +102,6 @@ ul li {
 
 #formulaire {
   width: 50%;
-  height: 80%;
   padding-top: 10px;
   margin: auto;
   background-color: black;
@@ -157,11 +156,12 @@ ul li {
   font-family: "Questrial", sans-serif;
   margin: 0 auto;
   margin-top: 20px;
+  transition: 1s;
 }
 
 .bouton:hover {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 
 .charsRemaining {

@@ -123,13 +123,15 @@ ul li {
 }
 
 .container-bloc2 {
+  position: relative;
   width: 55%;
   display: flex;
   flex-direction: column;
 }
 
 .title-bloc2 {
-  margin: 158px 40px 0px 28px;
+  position: relative;
+  top: 178px;
   font-family: "Resotho-Extralight";
   font-size: 60px;
   letter-spacing: 5px;
@@ -145,7 +147,9 @@ ul li {
 }
 
 .text-bloc2 {
-  margin: 30px 30px 0 30px;
+  position: relative;
+  top: 189px;
+  padding-right: 55px;
   line-height: 20px;
   font-size: 13px;
 }
@@ -213,10 +217,6 @@ ul li {
 /* RESPONSIVE */
 
 @media screen and (max-width: 1135px) {
-  /* .text-bloc {
-    height: min-content;
-  } */
-
   .text-bloc {
     flex-direction: column;
     height: min-content;
@@ -229,8 +229,10 @@ ul li {
   }
 
   .text-bloc2 {
-    margin: 0 50px;
-    text-align: center;
+    position: relative;
+    padding: 0;
+    margin: 0 52px;
+    top: -90px;
     text-align: justify;
   }
 
@@ -240,9 +242,11 @@ ul li {
   }
 
   .title-bloc2 {
-    margin: 55px 30px 55px 30px;
+    padding: 55px 30px 55px 30px;
     letter-spacing: 122px;
     font-size: 5.7vw;
+    position: relative;
+    top: -90px;
   }
 }
 
@@ -260,6 +264,7 @@ ul li {
 
   .title-bloc2 {
     letter-spacing: 27px;
+    text-align: center;
   }
 
   .picture-bloc,
@@ -270,11 +275,8 @@ ul li {
   .container-card {
     display: flex;
     flex-direction: column;
-    height: 839px;
-  }
-
-  .text-bloc {
-    height: 222vh;
+    height: 900px;
+    align-items: center;
   }
 
   .container-profil {

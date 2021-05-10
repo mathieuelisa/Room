@@ -84,7 +84,7 @@ ul li {
 .secondBloc {
   width: 50%;
   margin: 0 auto;
-  padding: 90px;
+  padding: 60px;
 }
 
 .text-secondBloc {
@@ -115,6 +115,7 @@ ul li {
 
 #shopnow:hover {
   color: grey;
+  transition: 0.5s;
 }
 
 #green-title {
@@ -261,6 +262,7 @@ ul li {
   border: 2px solid white;
   background-color: whitesmoke;
   color: #495057;
+  transition: 1s;
 }
 
 .button-collection:hover {
@@ -268,7 +270,7 @@ ul li {
   width: 235px;
   border-radius: 6px;
   color: #495057;
-  background-color: #efefef;
+  background-color: #e9e4e4;
 }
 
 .slick-list draggable {
@@ -281,6 +283,12 @@ ul li {
 
 .cookiesAndMentions a {
   text-decoration: none;
+  color: rgb(23, 23, 23);
+  transition: 1s;
+}
+
+.cookiesAndMentions a:hover {
+  color: #f2a0a0;
 }
 
 /* COOKIES CONTAINER */
