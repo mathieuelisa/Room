@@ -73,13 +73,15 @@ document.addEventListener("scroll", handleScroll)
 
 const loader = document.querySelector(".loader")
 const titleLoader = document.querySelector(".title-loader")
+const loaderGif = document.querySelector(".loader__gif")
 
 function timeOut(){
   setTimeout(() => {
     loader.className += " hidden"
   }, 3000)
     setTimeout(() => {
-      titleLoader.className += " hidden"
+      // titleLoader.className += " hidden"
+      loaderGif.className += " hidden"
     },1000);
 };
 

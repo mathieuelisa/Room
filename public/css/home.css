@@ -445,20 +445,30 @@ ul li {
   align-items: center;
 }
 
+.loader__gif {
+  height: 400px;
+  width: 600px;
+}
+
+.loader__gif.hidden {
+  animation: fadeOut 3s;
+  animation-fill-mode: forwards;
+}
+
 .loader h1 {
   color: #495057;
   letter-spacing: 4px;
 }
 
 .loader.hidden {
-  animation: fadeOut 2s;
+  animation: fadeOut 6s;
   animation-fill-mode: forwards;
 }
 
-.title-loader.hidden {
+/* .title-loader.hidden {
   animation: fadeOut 2s;
   animation-fill-mode: forwards;
-}
+} */
 
 .buttonScroll {
   display: none;
