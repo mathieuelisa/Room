@@ -78,21 +78,16 @@ const loaderGif = document.querySelector(".loader__gif")
 function timeOut(){
   setTimeout(() => {
     loader.className += " hidden"
-  }, 3000)
+  }, 1000)
     setTimeout(() => {
-      // titleLoader.className += " hidden"
-      loaderGif.className += " hidden"
-    },1000);
+      titleLoader.className += " hidden"
+      // loaderGif.className += " hidden"
+    },500);
 };
 
 timeOut()
 
-// SCROLL TEXT
-
-  AOS.init();
-
 // CARROUSEL
-
 $(document).ready(function(){
     $('.card').slick({
       dots: false,

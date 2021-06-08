@@ -22,89 +22,89 @@
     />
   </head>
 
+  <%- include("partials/header") -%>
   <body>
 
 <!-- First container -->
-<div class="mainBloc-contact"> 
-    <%- include("partials/header") -%>
+    <div class="mainBloc-contact"> 
 
-    <div id="title-contact">
-        <h1>Contact</h1>
+        <div id="title-contact">
+            <h1>Contact</h1>
+        </div>
+
     </div>
-
-</div>
 <!-- End first container -->
 
 <!-- Second container -->
-<div id="text-contact">
-    <p>Pour toute demande de renseignements, veuillez utiliser le formulaire ci-dessous pour contacter le magasin le plus proche de chez vous. <br> <br>
-        Ce dernier vous contactera dans les plus brefs délais.
-        Le magasin le plus proche de chez vous constitue votre point de contact privilégié. Il est ainsi habilité à vous assister en cas de réclamation et à vous communiquer les informations relatives aux produits, leur disponibilité, leur livraison, la tarification, etc.
-        <br> <br>Pour toute demande relative à une commande, veuillez sélectionner le magasin auprès duquel vous avez passé commande. Si vous n’êtes pas sûr(e) de quel magasin il s’agit ou s’il a fermé, veuillez sélectionner le magasin le plus proche de chez vous.
-        Lorsque vous achetez en ligne, c’est comme si vous achetiez dans votre magasin le plus proche. <br> 
-        Le magasin peut donc vous aider avec votre commande en ligne.
-    </p>
-</div>
+    <div id="text-contact">
+        <p>Pour toute demande de renseignements, veuillez utiliser le formulaire ci-dessous pour contacter le magasin le plus proche de chez vous. <br> <br>
+            Ce dernier vous contactera dans les plus brefs délais.
+            Le magasin le plus proche de chez vous constitue votre point de contact privilégié. Il est ainsi habilité à vous assister en cas de réclamation et à vous communiquer les informations relatives aux produits, leur disponibilité, leur livraison, la tarification, etc.
+            <br> <br>Pour toute demande relative à une commande, veuillez sélectionner le magasin auprès duquel vous avez passé commande. Si vous n’êtes pas sûr(e) de quel magasin il s’agit ou s’il a fermé, veuillez sélectionner le magasin le plus proche de chez vous.
+            Lorsque vous achetez en ligne, c’est comme si vous achetiez dans votre magasin le plus proche. <br> 
+            Le magasin peut donc vous aider avec votre commande en ligne.
+        </p>
+    </div>
 <!-- End second container -->
 
 <!-- Formulary container -->
-<div id="formulaire-bloc">
-    <h1>Formulaire</h1>
-        <div id="formulaire">
-            <form id="myform" class="cssform" method="POST">
-                <p>
-                  <label id="fname" for="user">Nom :</label>
-                  <input name="nom" type="text" id="user" value="" />
-                </p>
+    <div id="formulaire-bloc">
+        <h1>Formulaire</h1>
+            <div id="formulaire">
+                <form id="myform" class="cssform" method="POST">
+                    <p>
+                      <label id="fname" for="user">Nom :</label>
+                      <input name="nom" type="text" id="user" value="" />
+                    </p>
 
-                <p>
-                    <label id="lname" for="user">Prénom :</label>
-                    <input name="prenom" type="text" id="user" value="" />
-                </p>
+                    <p>
+                        <label id="lname" for="user">Prénom :</label>
+                        <input name="prenom" type="text" id="user" value="" />
+                    </p>
 
-                <p>
-                    <label id="phone" for="user">Téléphone :</label>
-                    <input name="tel" type="text" id="user" value="" />
-                </p>
-        
-                <p>
-                  <label id="mail" for="emailaddress">Email :</label>
-                  <input name="mail" type="text" id="emailaddress" value="" required/>
-                </p>
-
-                <p>
-                  <label for="shops-select">Choisissez votre magasin:</label>
-                  <select name="shops" id="pet-select">
-                      <option value="">--Choissisez votre magasin--</option>
-                      <option value="dog">Dog</option>
-                      <option value="cat">Cat</option>
-                      <option value="hamster">Hamster</option>
-                      <option value="parrot">Parrot</option>
-                      <option value="spider">Spider</option>
-                      <option value="goldfish">Goldfish</option>
-                  </select>
-                </p>
-        
-                <p class="comms">
-                  <label id="coms" for="comments">Commentaires : </label>
-                  <textarea name="comments" id="comments" rows="5" cols="2" maxlength="150"></textarea>
-                    <div>
-                      <p class="charsRemaining"></p> 
-                    </div>
-                </p>
-
-                <button class="bouton" type="submit">ENVOYE</button>
-                
-              </form>
-
-              <div class="wrapper">
-                <input type="checkbox" class="checkbox" id="check">
-                <label class="text-newletters" for="check">Oui, je veux recevoir la newletters de Room</label>
-              </div>
-              
+                    <p>
+                        <label id="phone" for="user">Téléphone :</label>
+                        <input name="tel" type="text" id="user" value="" />
+                    </p>
             
-        </div>
-</div>
+                    <p>
+                      <label id="mail" for="emailaddress">Email :</label>
+                      <input name="mail" type="text" id="emailaddress" value="" required/>
+                    </p>
+
+                    <p>
+                      <label for="shops-select">Choisissez votre magasin:</label>
+                      <select name="shops" id="pet-select">
+                          <option value="">--Choissisez votre magasin--</option>
+                          <option value="dog">Dog</option>
+                          <option value="cat">Cat</option>
+                          <option value="hamster">Hamster</option>
+                          <option value="parrot">Parrot</option>
+                          <option value="spider">Spider</option>
+                          <option value="goldfish">Goldfish</option>
+                      </select>
+                    </p>
+            
+                    <p class="comms">
+                      <label id="coms" for="comments">Commentaires : </label>
+                      <textarea name="comments" id="comments" rows="5" cols="2" maxlength="150"></textarea>
+                        <div>
+                          <p class="charsRemaining"></p> 
+                        </div>
+                    </p>
+
+                    <button class="bouton" type="submit">ENVOYE</button>
+                    
+                  </form>
+
+                  <div class="wrapper">
+                    <input type="checkbox" class="checkbox" id="check">
+                    <label class="text-newletters" for="check">Oui, je veux recevoir la newletters de Room</label>
+                  </div>
+                  
+                
+            </div>
+    </div>
 <!-- End formulary container -->
 
 <script src="contact.js"></script>

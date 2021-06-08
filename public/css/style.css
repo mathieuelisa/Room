@@ -49,7 +49,6 @@ body {
 
 #navbar {
   position: absolute;
-  font-size: 10px;
   z-index: 1;
 }
 
@@ -64,7 +63,7 @@ body {
 
 ul li {
   list-style: none;
-  font-size: 1.5em;
+  font-size: 1em;
   margin-left: 25px;
   margin-top: 20px;
 }
@@ -133,19 +132,12 @@ ul li {
   color: #206f36;
 }
 
-/* HOME PAGE : ARROW */
-
 #placement {
   display: flex;
   align-items: center;
   height: 58px;
   justify-content: space-between;
   width: 178px;
-}
-
-#arrowDiv {
-  /* padding-top: 20px;
-  width: 100px; */
 }
 
 .arrow2 {
@@ -165,35 +157,35 @@ ul li {
 
 /* HOME PAGE : SECOND AND THIRD CONTAINER */
 
-.second-container {
+.home__second-container {
   display: flex;
   width: 100%;
   height: 230px;
 }
 
-.third-container {
+.home__third-container {
   display: flex;
   width: 100%;
   height: 230px;
   flex-direction: row-reverse;
 }
 
-.carre1 {
+.home__second-container--left {
   background-image: url("/images/image-about-dark.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 30%;
+  width: 80%;
   height: 230px;
 }
 
-.carre2 {
+.home__third-container--left {
   width: 70%;
   height: 230px;
   padding: 60px 90px;
 }
 
-.carre3 {
+.home__third-container--right {
   background-image: url("/images/image-about-light.jpg");
   background-size: cover;
   background-position: center;
@@ -202,13 +194,20 @@ ul li {
   height: 230px;
 }
 
-.title-carre2 {
+.home__second-container--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 59px;
+}
+
+.home--title {
   font-size: 14px;
   margin-bottom: 10px;
   letter-spacing: 4px;
 }
 
-.text-carre2 {
+.home--text {
   font-size: 1em;
   color: #495057;
   line-height: 20px;
@@ -296,19 +295,17 @@ ul li {
   height: 100%;
 }
 
-.cookiesAndMentions a {
+.home__cookiesAndMentions a {
   text-decoration: none;
   color: rgb(23, 23, 23);
   transition: 1s;
 }
 
-.cookiesAndMentions a:hover {
+.home__cookiesAndMentions a:hover {
   color: #f2a0a0;
 }
 
-/* HOME PAGE : COOKIES CONTAINER */
-
-.cookiesAndMentions {
+.home__cookiesAndMentions {
   font-size: 0.7em;
   text-align: center;
   height: 50px;
@@ -355,19 +352,19 @@ ul li {
     height: min-content;
   }
 
-  .second-container,
-  .third-container {
+  .home__second-container,
+  .home__third-container {
     height: min-content;
   }
 
   .home__first-container--firstBloc,
   .home__first-container--secondBloc,
-  .carre1,
-  .carre3 {
+  .home__second-container--left,
+  .home__third-container--right {
     width: 100%;
   }
 
-  .carre2 {
+  .home__third-container--left {
     width: 100%;
     padding: 40px;
   }
@@ -395,26 +392,26 @@ ul li {
     margin: 0 auto;
   }
 
-  .second-container,
-  .third-container,
+  .home__second-container,
+  .home__third-container,
   .image-inspiration {
     flex-direction: column;
     height: 85vh;
   }
 
-  .carre1,
-  .carre3 {
+  .home__second-container--left,
+  .home__third-container--right {
     width: 60%;
     margin: 0 auto;
   }
 
-  .text-carre2 {
+  .home__second-container_right--text {
     text-align: center;
     margin: 0 35px;
     font-size: 0.8em;
   }
 
-  .title-carre2 {
+  .home__second-container_right--title {
     margin-bottom: 20px;
     font-size: 1em;
     text-align: center;
