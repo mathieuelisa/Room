@@ -4,26 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ROOM</title>
-    <link rel="stylesheet" type="text/css" href="/css/mentions.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
       rel="stylesheet"
     />
   </head>
+  <%- include("partials/header") -%>
 
+  <div class="mentions__container">
   <body>
-    <div class="mainBloc-mentions">
-
-      <%- include("partials/header") -%>
-
-      <div class="main-bloc">
+    <div class="mentions__container--title">
+      
         <div id="main-title">MENTIONS LEGALES & COOKIES</div>
-      </div>
 
     </div>
 
-    <div class="main-text">
+    <div class="mentions__container--text">
       <h2>PRIVACY POLICY </h2> <br><br>
       <h3>No secrets at all!</h3> <br>
        
@@ -178,10 +176,10 @@
       No right, title or other claims of ownership or license may be deemed assigned to you as a result of downloading and/or copying these materials. <br>
     </div>
 
-<div>
-  <button class="buttonScroll">UP</button>
-</div>
-    
+  <div>
+    <button class="buttonScroll">UP</button>
+  </div>
+</div>  
 <script src="mention.js"></script>
   </body>
 </html>
