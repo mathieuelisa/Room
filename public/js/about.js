@@ -1,5 +1,4 @@
 // NAVBAR 
-
 var navbar = document.querySelectorAll(".navbar-items");
 
 for (let i = 0; i < navbar.length; i++) {
@@ -11,9 +10,5 @@ for (let i = 0; i < navbar.length; i++) {
     this.classList.remove("borderLine");
   });
 }
-
-// SCROLL TEXT AND PICS WITH AOS 
-
-AOS.init();
 
 

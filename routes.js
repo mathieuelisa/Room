@@ -7,6 +7,7 @@ const link = require("./links.json")
 
 // Dynamic link
 router.get("/room/:name", function(req,res){
+    
    const linkName = req.params.name
    const foundLink = link.find((link) => link.name === linkName)
 
