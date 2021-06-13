@@ -2,11 +2,13 @@ const express = require ("express")
 const ejs = require("ejs")
 const mongoose = require('mongoose');
 const router = require("./routes.js")
+const links = require("./links.json")
 
 const app = express()
 
 // Moteurs de templates
 app.set('view engine', 'ejs');
+
 
 // Middlewares
 app.use(express.static('public'));

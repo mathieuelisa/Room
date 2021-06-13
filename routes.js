@@ -1,20 +1,21 @@
 const express = require("express");
 const router = express.Router();
+const app = express()
 
-router.get("/home", function(req,res){
-    res.render("home")
-})
+const link = require("./links.json")
 
-.get("/about", function(req,res){
-    res.render("about")
-})
 
-.get("/contact", function(req,res){
-    res.render("contact")
-})
+// Dynamic link
+router.get("/room/:name", function(req,res){
+   const linkName = req.params.name
+   const foundLink = link.find((link) => link.name === linkName)
 
-.get("/mentions", function(req,res){
-    res.render("mentions")
+    if(foundLink){
+        console.log(foundLink);
+        res.render(foundLink.name)
+    } else {
+        res.status(404).render("notfound")
+    } 
 })
 
 .post("/contact", function(req,res){
