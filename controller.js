@@ -1,5 +1,13 @@
 const link = require("./links.json")
+const mongoose = require("mongoose")
 
+const clientRoomSchema = new mongoose.Schema({
+    nom: String,
+    prenom: String,
+    tel: Number,
+    mail: String,
+    message: String
+})
 
 module.exports = {
     link: (req,res)=> {
@@ -15,7 +23,6 @@ module.exports = {
      },
 
      mypost: (req,res)=>{
-        
         const Client = mongoose.model("User", clientRoomSchema);
 
         let firstName = req.body.nom
@@ -34,6 +41,6 @@ module.exports = {
              client.save();
              res.redirect("/room/home")
      
-        console.log(`You have a new user: ${firstname} ${lastName}`)
+        console.log(`You have a new user: ${firstName} ${lastName}`)
      }
 }

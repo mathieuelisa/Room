@@ -2,8 +2,6 @@ const express = require("express");
 const router = express.Router();
 const app = express()
 
-// const link = require("./links.json")
-
 const controller = require("./controller")
 
 
