@@ -27,7 +27,7 @@ const clientRoomSchema = new mongoose.Schema({
     message: String
 })
 
-const Client = mongoose.model("User", clientRoomSchema);
+// const Client = mongoose.model("User", clientRoomSchema);
 
 app.listen(3000, function(){
     console.log("Your app is running on port 3000")
