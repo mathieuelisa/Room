@@ -635,6 +635,16 @@ ul li {
   display: flex;
 }
 
+.selection {
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#selection__shop {
+  display: flex;
+  flex-direction: column;
+}
+
 #title-contact {
   margin: auto 0;
   font-family: "Dolce Vita";
