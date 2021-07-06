@@ -1,4 +1,4 @@
-// NAVBAR 
+// NAVBAR
 var navbar = document.querySelectorAll(".navbar-items");
 
 for (let i = 0; i < navbar.length; i++) {
@@ -11,4 +11,7 @@ for (let i = 0; i < navbar.length; i++) {
   });
 }
 
-
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,
+});

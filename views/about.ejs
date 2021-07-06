@@ -25,10 +25,10 @@
 
   <%- include("partials/header") -%>
 
-  <body>
+  <body data-scroll-container>
     <div class="mainBloc-about">
       <div id="citation">
-        <h2 id="title-citation">
+        <h2 data-scroll data-scroll-speed="2" id="title-citation">
           J’aime explorer des domaines qui me font peur. Lorsque j’ai peur, je
           sais que je vais dans la bonne direction...
         </h2>
@@ -118,7 +118,7 @@
 <!-- Last container -->
     <div class="final-picture-bloc">
       <div id="citation2">
-          <h2 id="title-citation">
+          <h2 data-scroll data-scroll-speed="2" id="title-citation">
           L'élégance, n'est pas n'est pas une question de luxe, de richesse.
           Mais d'attitude....
           </h2><br>
@@ -127,6 +127,10 @@
     </div>
 <!-- End last container -->
 
-    <script src="/js/about.js"></script>
-  </body>
+ <!-- Locomotive scroll -->
+<script src="/js/locomotive-scroll.min.js"></script>
+
+<script src="/js/about.js"></script>
+</body>
+
 </html>
