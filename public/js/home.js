@@ -1,90 +1,72 @@
-// ARROW
+const app = {
+  buttonScrollTop: document.querySelector(".buttonScroll"),
+  shop: document.querySelector(".shop"),
+  arrow: document.querySelector(".arrow"),
+  loader: document.querySelector(".loader"),
+  loaderGif: document.querySelector(".loader__gif"),
+  rootElement: document.documentElement,
+  deltaY: 0, // Ici on initialise le delta qui est dans l'event de locomotive
+  locomotiveScroll: null,
 
-var arrow = document.querySelector(".shop");
+  animArrow: () => {
+    app.shop.addEventListener("mouseenter", function () {
+      app.arrow.classList.add("arrow2");
+    });
 
-arrow.addEventListener("mouseenter", function () {
-  document.querySelector(".arrow").classList.add("arrow2");
-});
+    app.shop.addEventListener("mouseleave", function () {
+      app.arrow.classList.remove("arrow2");
+    });
+  },
 
-arrow.addEventListener("mouseleave", function () {
-  document.querySelector(".arrow").classList.remove("arrow2");
-});
+  backToTheTop: () => {
+    app.buttonScrollTop.addEventListener("click", () => {
+      app.locomotiveScroll.scrollTo(0); // Ici on utilise la méthode 'scrollTo' de locomotive
+    });
+  },
 
-// NAVBAR
+  onScroll: (event) => {
+    // On met tout le code concernant le scroll dans cette méthode
+    if (event.delta) app.deltaY = event.delta.y;
+    const result = app.rootElement.scrollHeight - app.rootElement.clientHeight;
 
-var navbar = document.querySelectorAll(".navbar-items");
+    if (app.rootElement.scrollTop / result > 0.5) {
+      app.buttonScrollTop.classList.add("showBtn");
+    } else {
+      app.buttonScrollTop.classList.remove("showBtn");
+    }
 
-for (let i = 0; i < navbar.length; i++) {
-  navbar[i].addEventListener("mouseenter", function () {
-    this.classList.add("borderLine");
-  });
+    document.body.style.setProperty(
+      "--scroll",
+      window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+    );
+  },
 
-  navbar[i].addEventListener("mouseleave", function () {
-    this.classList.remove("borderLine");
-  });
-}
+  timeOut: () => {
+    setTimeout(() => {
+      app.loader.className += " hidden";
+    }, 200);
+  },
 
-// TEXT CHANGE ON HOME TITLE
+  initScroll: () => {
+    app.locomotiveScroll = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+      multiplier: 1,
+    });
+    app.locomotiveScroll.on("scroll", app.onScroll);
+  },
 
-let myGreenText = document.querySelector("#green-title");
+  init: function () {
+    app.initScroll();
+    app.animArrow();
+    app.backToTheTop();
+    app.timeOut();
+  },
+};
 
-function changeText() {
-  setTimeout(function () {
-    myGreenText.innerHTML = "Explorez";
-    setTimeout(function () {
-      myGreenText.innerHTML = "Imaginez";
-    }, 800);
-  }, 800);
-}
-
-changeText();
-
-/// BUTTON FOR SCROLL TOP
-
-let buttonScrollTop = document.querySelector(".buttonScroll");
-let rootElement = document.documentElement;
-
-function scrollTop() {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-}
-
-buttonScrollTop.addEventListener("click", scrollTop);
-
-//  BUTTON APPEAR FOR SCROLL AT 90%
-
-function handleScroll() {
-  let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
-  if (rootElement.scrollTop / scrollTotal > 0.5) {
-    // Show button
-    buttonScrollTop.classList.add("showBtn");
-  } else {
-    // Hide button
-    buttonScrollTop.classList.remove("showBtn");
-  }
-}
-
-document.addEventListener("scroll", handleScroll);
+document.addEventListener("DOMContentLoaded", app.init);
 
 // LOADING PAGE WITH SETTIMEOUT
-
-const loader = document.querySelector(".loader");
-const titleLoader = document.querySelector(".title-loader");
-const loaderGif = document.querySelector(".loader__gif");
-
-function timeOut() {
-  setTimeout(() => {
-    loader.className += " hidden";
-  }, 1000);
-  setTimeout(() => {
-    titleLoader.className += " hidden";
-    // loaderGif.className += " hidden"
-  }, 500);
-}
-
-timeOut();
 
 // CARROUSEL
 $(document).ready(function () {
@@ -96,10 +78,6 @@ $(document).ready(function () {
     cssEase: "linear",
     autoplay: true,
     autoplaySpeed: 6000,
+    draggable: false,
   });
-});
-
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
 });

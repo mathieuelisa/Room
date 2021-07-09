@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ROOM</title>
+<%- include ("partials/header") %>
 
-    <!-- Favicon Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicon/site.webmanifest">
-
-    <!-- Scroll text -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
-    <!-- Css and Font style -->
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <%- include("partials/header") -%>
+  <%- include("partials/navbar") -%>
 
   <body data-scroll-container>
     <div class="mainBloc-about">
@@ -36,7 +13,7 @@
       </div>
     </div>
 
-    <div class="text-bloc" >
+    <div class="text-bloc">
 
 <!-- First container -->
       <div class="container-card">
@@ -112,11 +89,15 @@
     </div>
 
 <!-- Third container     -->
-    <div class="picture-bloc"></div>
+<div data-scroll data-scroll-call="dynamicBackground" style="position: relative;">
+  <div id="fixed-target"></div>
+  <div data-scroll data-scroll-sticky data-scroll-target="#fixed-target" class="picture-bloc"></div>
+</div>
+
 <!-- End third container -->
 
 <!-- Last container -->
-    <div class="final-picture-bloc">
+    <div data-scroll data-scroll-call="dynamicBackground" class="final-picture-bloc">
       <div id="citation2">
           <h2 data-scroll data-scroll-speed="2" id="title-citation">
           L'élégance, n'est pas n'est pas une question de luxe, de richesse.
