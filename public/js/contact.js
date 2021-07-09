@@ -1,30 +1,33 @@
-var navbar = document.querySelectorAll(".navbar-items");
+const app = {
+  myTextArea: document.querySelector("textarea"),
+  maxChars: document.querySelector(".charsRemaining"),
+  maxLength: 150,
 
-for (let i = 0; i < navbar.length; i++) {
-  navbar[i].addEventListener("mouseenter", function () {
-    this.classList.add("borderLine");
-  });
+  writeInForm: () => {
+    app.myTextArea.addEventListener("keyup", function () {
+      let textlength = app.maxLength - app.myTextArea.value.length;
 
-  navbar[i].addEventListener("mouseleave", function () {
-    this.classList.remove("borderLine");
-  });
-}
+      app.maxChars.innerHTML = textlength + " characters remaining";
+      if (textlength < 50) {
+        maxChars.style.color = "red";
+      }
+    });
+  },
 
-// Characters Remaining
+  init: function () {
+    app.writeInForm();
+  },
+};
 
-let myTextArea = document.querySelector("textarea");
-let maxChars = document.querySelector(".charsRemaining");
-let maxLength = 150;
+document.addEventListener("DOMContentLoaded", app.init);
 
-myTextArea.addEventListener("keyup", function () {
-  let textlength = maxLength - myTextArea.value.length;
+// myTextArea.addEventListener("keyup", function () {
+//   let textlength = maxLength - myTextArea.value.length;
 
-  maxChars.innerHTML = textlength + " characters remaining"
+//   maxChars.innerHTML = textlength + " characters remaining"
 
-  if (textlength < 50) {
-    maxChars.style.color = "red";
-  }
-  
-});
+//   if (textlength < 50) {
+//     maxChars.style.color = "red";
+//   }
 
-
+// });

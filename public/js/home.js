@@ -5,7 +5,7 @@ const app = {
   loader: document.querySelector(".loader"),
   loaderGif: document.querySelector(".loader__gif"),
   rootElement: document.documentElement,
-  deltaY: 0, // Ici on initialise le delta qui est dans l'event de locomotive
+  deltaY: 0,
   locomotiveScroll: null,
 
   animArrow: () => {
@@ -20,12 +20,11 @@ const app = {
 
   backToTheTop: () => {
     app.buttonScrollTop.addEventListener("click", () => {
-      app.locomotiveScroll.scrollTo(0); // Ici on utilise la méthode 'scrollTo' de locomotive
+      app.locomotiveScroll.scrollTo(0);
     });
   },
 
   onScroll: (event) => {
-    // On met tout le code concernant le scroll dans cette méthode
     if (event.delta) app.deltaY = event.delta.y;
     const result = app.rootElement.scrollHeight - app.rootElement.clientHeight;
 
@@ -65,8 +64,6 @@ const app = {
 };
 
 document.addEventListener("DOMContentLoaded", app.init);
-
-// LOADING PAGE WITH SETTIMEOUT
 
 // CARROUSEL
 $(document).ready(function () {
