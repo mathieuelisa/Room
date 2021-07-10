@@ -3,10 +3,12 @@
   <%- include("partials/navbar") -%>
   <body>
 
+    <div data-scroll-container>
+
 <!-- First container -->
     <div class="mainBloc-contact"> 
 
-        <div id="title-contact">
+        <div data-scroll data-scroll-speed="2" id="title-contact">
             <h1>Contact</h1>
         </div>
 
@@ -42,12 +44,12 @@
 
                     <p>
                         <label id="phone" for="user">Téléphone :</label>
-                        <input name="tel" type="text" id="user" value="" />
+                        <input name="tel" type="number" id="user" value="" />
                     </p>
             
                     <p>
                       <label id="mail" for="emailaddress">Email :</label>
-                      <input name="mail" type="text" id="emailaddress" value="" required/>
+                      <input name="mail" type="email" id="emailaddress" value="" required/>
                     </p>
 
                     <p id="selection__shop">
@@ -84,6 +86,8 @@
             </div>
     </div>
 <!-- End formulary container -->
+</div>
+<script src="/js/locomotive-scroll.min.js"></script>
 
 <script src="/js/contact.js"></script>
 </body>

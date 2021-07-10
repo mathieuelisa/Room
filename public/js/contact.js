@@ -21,13 +21,7 @@ const app = {
 
 document.addEventListener("DOMContentLoaded", app.init);
 
-// myTextArea.addEventListener("keyup", function () {
-//   let textlength = maxLength - myTextArea.value.length;
-
-//   maxChars.innerHTML = textlength + " characters remaining"
-
-//   if (textlength < 50) {
-//     maxChars.style.color = "red";
-//   }
-
-// });
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,
+});
