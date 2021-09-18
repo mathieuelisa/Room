@@ -49,7 +49,7 @@ const app = {
   initScroll: () => {
     app.locomotiveScroll = new LocomotiveScroll({
       el: document.querySelector("[data-scroll-container]"),
-      smooth: true,
+      smooth: false,
       multiplier: 1,
     });
     app.locomotiveScroll.on("scroll", app.onScroll);

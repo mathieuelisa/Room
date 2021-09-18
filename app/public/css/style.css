@@ -229,9 +229,11 @@ ul li {
 }
 
 .home__fourth-container_up {
-  width: 100%;
+  width: 180px;
   margin-top: 50px;
   margin-bottom: 50px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 .home__fourth-container_up--title {
@@ -588,6 +590,17 @@ ul li {
   font-size: 1.2vw;
   letter-spacing: 1px;
   font-family: "Dolce Vita";
+}
+
+/* SHOP PAGE */
+.shop__container {
+  height: 100vh;
+  font-size: 10px;
+  background-image: url(/images/shop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
 }
 
 /* 404 PAGE */
